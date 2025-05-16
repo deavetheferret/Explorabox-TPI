@@ -1,11 +1,95 @@
+//=========>> Variables <<========//
+$color-black: #2a2a2a;
+$color-white: #fefefe;
+$color-gray: #8f8f8f;
+$color-purple: #c6adf8;
+$color-orange: #e3592d;
+$color-acid: #d5f672;
+$color-green: #414c34;
+$color-blue: #0560f1;
+$color-pink: #eea4a5;
+
+$font-ease: "ease", sans-serif;
+$font-inter: "Inter Display", sans-serif;
+@mixin font($font, $size, $weight, $line-height, $letter-spacing) {
+  font-family: $font;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin transparent-black {
+  border-radius: 15px;
+  background: rgba(42, 42, 42, 0.8);
+  box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+@mixin transparent-white {
+  border-radius: 15px;
+  background: rgba(254, 254, 254, 0.2);
+  box-shadow: 0px 4px 26px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+$font-size: 16px;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  background-color: $color-black;
+  color: $color-white;
+  font-size: $font-size;
+}
+
+@font-face {
+  font-family: "ease";
+  src: url("./webfont/EaseSemiRounded-Bold.woff2");
+  src: url("./webfont/EaseSemiRounded-Bold.woff2") format("woff2"),
+    url("./webfont/EaseSemiRounded-Bold.woff") format("woff"),
+    url("./webfont/EaseSemiRounded-Bold.ttf") format("truetype");
+}
+
+body {
+  -webkit-font-smoothing: antialiased; /* looks better */
+  -moz-osx-font-smoothing: grayscale; /* looks better */
+  font-family: $font-inter;
+}
+
+h1 {
+  @include font($font-ease, 5.61rem, 700, 95%, -0.22438rem);
+}
+h2 {
+  @include font($font-ease, 4.20875rem, 700, 95%, -0.08419rem);
+}
+h3 {
+  @include font($font-inter, 3.1575rem, 600, 113%, 0);
+}
+h4 {
+  @include font($font-inter, 2.36875rem, 600, normal, 0);
+}
+h5 {
+  @include font($font-inter, 1.77688rem, 600, normal, 0);
+}
+h6 {
+  @include font($font-inter, 1.33313rem, 600, normal, 0);
+}
+p {
+  @include font($font-inter, 1rem, 400, normal, 0);
+}
+span {
+  @include font($font-inter, 0.75rem, 400, normal, 0);
+}
+
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 img,

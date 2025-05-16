@@ -1,0 +1,37 @@
+header.header__container {
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 50vw);
+  right: calc(50% - 50vw);
+  padding: 20px 50px;
+  @include transparent-black();
+  .header__logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    @include font($font-ease, 1.5rem, 700, 100%, -0.045rem);
+    text-transform: uppercase;
+    img {
+      width: 176px;
+    }
+  }
+  .header__nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      li {
+        a {
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.button {
+  padding: 20px 45px;
+  @include font($font-inter, 1.33313rem, 600, normal, 0);
+
+  &.button-black {
+    @include transparent-black();
+  }
+
+  &.button-white {
+    @include transparent-white();
+  }
+}

@@ -1,0 +1,31 @@
+section.teaser {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 0;
+  padding: 0 0 45px 0;
+  background: radial-gradient(
+    103.81% 100.72% at 12.47% 100%,
+    rgba(0, 0, 0, 0.82) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  button {
+    position: absolute;
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
