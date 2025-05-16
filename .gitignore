@@ -3,4 +3,4 @@
 dist
 node_modules
 src/img
-src/fonts
+src/scss/webfont

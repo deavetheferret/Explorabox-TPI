@@ -1,12 +1,20 @@
 .button {
   padding: 20px 45px;
   @include font($font-inter, 1.33313rem, 600, normal, 0);
-
+  z-index: 2;
+  display: inline-block;
+  transition: all 0.1s ease-in-out;
   &.button-black {
     @include transparent-black();
+    &:hover {
+      @include transparent-white(0.3);
+    }
   }
 
   &.button-white {
     @include transparent-white();
+    &:hover {
+      @include transparent-white(0.6);
+    }
   }
 }
