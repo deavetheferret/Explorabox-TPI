@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>ExploraBox</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="scss/main.scss" />
-    <link rel="icon" href="img/favicon-aci.png" />
-  </head>
-  <body>
-    <include src="partials/header.html"> </include>
-    <main>
-      <section class="teaser">
+<extends src="layouts/base-layout.html" locals='{"pageTitle": "Acceuil"}'/>
+<block name="main_content">
+  <section class="teaser">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -338,7 +328,5 @@
         </div>
         <img src="img/blur_blue.svg" class="cards__background" />
       </section>
-    </main>
-    <script src="js/main.js" type="module"></script>
-  </body>
-</html>
+</block>
+</extends>
