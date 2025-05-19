@@ -1,0 +1,69 @@
+.card {
+  @include transparent-white();
+  min-width: fit-content;
+  max-width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+
+  .card__subtext {
+    opacity: 0.5;
+  }
+  .card__list {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    list-style: none;
+    .card__list-item {
+      &::after {
+        content: "↗";
+        display: inline-block;
+      }
+      a {
+        position: relative;
+        &::after {
+          content: "";
+          width: 0;
+          height: 1px;
+          background: $white;
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+        }
+      }
+
+      &:hover {
+        a {
+          &::after {
+            width: 100%;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+          }
+        }
+      }
+    }
+  }
+
+  .card__input[type="text"] {
+    @include transparent-white(0.2);
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    color: $white;
+    transition: all 0.2s ease-in-out;
+    @include font($font-inter, 1rem, 400, normal, 0);
+    &::placeholder {
+      color: $white;
+      opacity: 0.5;
+    }
+    &:focus {
+      outline: none;
+      @include transparent-white(0.4);
+    }
+    &:hover {
+      @include transparent-white(0.4);
+    }
+  }
+}

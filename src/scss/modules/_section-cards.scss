@@ -1,0 +1,21 @@
+section.cards {
+  position: relative;
+  margin-bottom: 500px;
+  h3 {
+    margin-bottom: 3rem;
+  }
+  .cards__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .cards__background {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100vw;
+    z-index: -1;
+    object-fit: cover;
+  }
+}

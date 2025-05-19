@@ -5,7 +5,7 @@
     <title>ExploraBox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
-    <link rel="icon" href="img/favicon-aci.ico" />
+    <link rel="icon" href="img/favicon-aci.png" />
   </head>
   <body>
     <include src="partials/header.html"> </include>
@@ -105,6 +105,238 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="cards avis">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3>Ce que dises nos explorateurs</h3>
+            </div>
+            <div class="col-6">
+              <div class="cards__container">
+                <include src="partials/light-card.html">
+                  { "card_title": "“Ça m’a reconnecté à ce que j’aime vraiment :
+                  explorer, apprendre, partager.”", "card_text": "Chaque journée
+                  avec ExploraBox, c’est comme une respiration dans mon
+                  quotidien. J’y vais sans rien attendre, et je reviens toujours
+                  avec quelque chose : une idée, une sensation, une
+                  conversation. Ce n’est pas juste une sortie, c’est une
+                  parenthèse qui me fait du bien.", "card_subtext": "Carlos, 28
+                  ans — Neuchâtel" }
+                </include>
+                <include src="partials/light-card.html">
+                  { "card_title": "“Je me suis surprise à aimer ne rien
+                  contrôler.”", "card_text": "D’habitude, je planifie tout. Là,
+                  j’ai dû lâcher prise… et c’était génial. L’équipe a vraiment
+                  compris ce que j’aimais. Chaque sortie était différente, mais
+                  toujours dans mon univers. C’est un luxe rare : juste se
+                  laisser faire, et se sentir à sa place.", "card_subtext":
+                  "Giulia, 39 ans – Genève" }
+                </include>
+                <include src="partials/light-card.html">
+                  { "card_title": "“Ça m’a reconnecté à ce que j’aime vraiment :
+                  explorer, apprendre, partager.”", "card_text": "Chaque journée
+                  avec ExploraBox, c’est comme une respiration dans mon
+                  quotidien. J’y vais sans rien attendre, et je reviens toujours
+                  avec quelque chose : une idée, une sensation, une
+                  conversation. Ce n’est pas juste une sortie, c’est une
+                  parenthèse qui me fait du bien.", "card_subtext": "Carlos, 28
+                  ans — Neuchâtel" }
+                </include>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="cards__container">
+                <include src="partials/light-card.html">
+                  { "card_title": "“On a vu nos collègues sous un autre jour –
+                  c’était rafraîchissant et sincère.”", "card_text": "Nous
+                  cherchions une activité de team building qui sorte du cadre
+                  sans tomber dans le cliché. ExploraBox a parfaitement su
+                  capter notre besoin. Les collaborateurs ne savaient rien à
+                  l’avance, et ça a tout changé : ils se sont laissés
+                  surprendre, ils ont ri, collaboré… et ils en parlent encore.
+                  On refera, c’est certain.", "card_subtext": "Julie M — Vaud" }
+                </include>
+                <include src="partials/light-card.html">
+                  { "card_title": "“J’attendais chaque date comme un enfant
+                  attend Noël.”", "card_text": "J’avais besoin de remettre un
+                  peu de légèreté dans ma vie. ExploraBox m’a offert ça, et plus
+                  encore : de la curiosité, des sourires, parfois même de
+                  l’émerveillement. Franchement, je ne pensais pas possible de
+                  me redécouvrir à travers des activités et de me réinventer à
+                  mon âge.", "card_subtext": "Jean-Pascal, 72 ans – Lausanne" }
+                </include>
+                <include src="partials/light-card.html">
+                  { "card_title": "“Je me suis surprise à aimer ne rien
+                  contrôler.”", "card_text": "D’habitude, je planifie tout. Là,
+                  j’ai dû lâcher prise… et c’était génial. L’équipe a vraiment
+                  compris ce que j’aimais. Chaque sortie était différente, mais
+                  toujours dans mon univers. C’est un luxe rare : juste se
+                  laisser faire, et se sentir à sa place.", "card_subtext":
+                  "Giulia, 39 ans – Genève" }
+                </include>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="img/blur_orange.svg" class="cards__background" />
+      </section>
+      <section class="cards faq">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3>Questions fréquentes (FAQ)</h3>
+            </div>
+            <div class="col-6">
+              <div class="cards__container">
+                <extends
+                  src="partials/light-card.html"
+                  locals='{ "card_title": "Concept & fonctionnement", "card_text": "",
+                  "card_subtext": "Plus dans ce genre ↗" }'
+                >
+                  <block name="card_content"
+                    ><ul class="card__list">
+                      <li class="card__list-item">
+                        <a href="about.html#faq-1a">
+                          Comment fonctionne ExploraBox ?
+                        </a>
+                      </li>
+                      <li class="card__list-item">
+                        <a href="about.html#faq-1b"
+                          >Quelles sont les étapes entre la réservation et le
+                          jour de l’activité ?</a
+                        >
+                      </li>
+                      <li class="card__list-item">
+                        <a href="about.html#faq-1c">
+                          Puis-je choisir ou exclure certaines activités ?
+                        </a>
+                      </li>
+                      <li class="card__list-item">
+                        <a href="about.html#faq-1d">
+                          Comment l’application m’accompagne-t-elle avant et
+                          pendant l’expérience ?
+                        </a>
+                      </li>
+                    </ul></block
+                  >
+                </extends>
+                <extends
+                  src="partials/light-card.html"
+                  locals='{ "card_title": "Logistique & transport", "card_text": "",
+                  "card_subtext": "Plus dans ce genre ↗" }'
+                >
+                  <block name="card_content"
+                    ><ul class="card__list">
+                      <li class="card__list-item">
+                        <a href="about.html#faq-3a">
+                          Dois-je utiliser ma propre voiture ou les transports
+                          publics ?
+                        </a>
+                      </li>
+                      <li class="card__list-item">
+                        <a href="about.html#faq-3b"
+                          >Les activités sont-elles accessibles en transports en
+                          commun ?</a
+                        >
+                      </li>
+                      <li class="card__list-item">
+                        <a href="about.html#faq-3c">
+                          Quels sont les horaires typiques d’une journée
+                          ExploraBox ?
+                        </a>
+                      </li>
+                    </ul></block
+                  >
+                </extends>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="cards__container">
+                <extends
+                  src="partials/light-card.html"
+                  locals='{ "card_title": "Réservation & personnalisation", "card_text": "",
+                  "card_subtext": "Plus dans ce genre ↗" }'
+                >
+                  <block name="card_content"
+                    ><ul class="card__list">
+                      <li class="card__list-item">
+                        <a href="about.html#faq-2a">
+                          Puis-je réserver pour une seule personne ?
+                        </a>
+                      </li>
+                      <li class="card__list-item">
+                        <a href="about.html#faq-2b"
+                          >Est-il possible d'offrir une ExploraBox en cadeau
+                          ?</a
+                        >
+                      </li>
+                      <li class="card__list-item">
+                        <a href="about.html#faq-2c">
+                          Peut-on réserver pour un groupe ou une famille ?
+                        </a>
+                      </li>
+                      <li class="card__list-item">
+                        <a href="about.html#faq-2d">
+                          Comment sont prise en compte mes préférences ou
+                          restrictions (allergies, mobilité, etc.) ?
+                        </a>
+                      </li>
+                      <li class="card__list-item">
+                        <a href="about.html#faq-2e">
+                          Puis-je modifier ou annuler une date réservée ?
+                        </a>
+                      </li>
+                    </ul></block
+                  >
+                </extends>
+                <extends
+                  src="partials/light-card.html"
+                  locals='{ "card_title": "Expérience & contenu", "card_text": "",
+                  "card_subtext": "Plus dans ce genre ↗" }'
+                >
+                  <block name="card_content"
+                    ><ul class="card__list">
+                      <li class="card__list-item">
+                        <a href="about.html#faq-3a">
+                          Les activités sont-elles adaptées aux enfants ?
+                        </a>
+                      </li>
+                      <li class="card__list-item">
+                        <a href="about.html#faq-3b"
+                          >Vais-je refaire la même activité si je reserve
+                          plusieurs dates ?</a
+                        >
+                      </li>
+                    </ul></block
+                  >
+                </extends>
+              </div>
+            </div>
+            <div class="col-12 mt-5">
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                  <extends
+                    src="partials/light-card.html"
+                    locals='{ "card_title": "Une question en particulier ?", "card_text": "",
+                      "card_subtext": "" }'
+                  >
+                    <block name="card_content">
+                      <input
+                        type="text"
+                        name="faq_question"
+                        id=""
+                        placeholder="Est-ce que..."
+                        class="card__input"
+                      />
+                    </block>
+                  </extends>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="img/blur_blue.svg" class="cards__background" />
       </section>
     </main>
     <script src="js/main.js" type="module"></script>
