@@ -31,3 +31,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+function showSectionBasedOnHash() {
+  const hash = window.location.hash;
+
+  document.getElementById("connect").style.display = "none";
+  document.getElementById("signup").style.display = "none";
+
+  switch (hash) {
+    case "#connect":
+      document.getElementById("connect").style.display = "block";
+      break;
+    case "#signup":
+      document.getElementById("signup").style.display = "block";
+      break;
+    default:
+      document.getElementById("connect").style.display = "block";
+  }
+}
+
+// Appel initial
+showSectionBasedOnHash();
+
+// Mise à jour lors du changement de hash
+window.addEventListener("hashchange", showSectionBasedOnHash);
