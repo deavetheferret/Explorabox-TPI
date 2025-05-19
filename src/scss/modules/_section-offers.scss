@@ -2,4 +2,13 @@ section.offers {
   h3 {
     margin-bottom: 10px;
   }
+
+  .offers__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
 }

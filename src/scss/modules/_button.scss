@@ -4,6 +4,8 @@
   z-index: 2;
   display: inline-block;
   transition: all 0.1s ease-in-out;
+  color: $white;
+  min-width: fit-content;
   &.button-black {
     @include transparent-black();
     &:hover {
