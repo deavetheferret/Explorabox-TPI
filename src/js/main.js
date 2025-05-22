@@ -30,28 +30,36 @@ document.addEventListener("DOMContentLoaded", function () {
       cardTitle.style.display = "none";
     }
   });
-});
 
-function showSectionBasedOnHash() {
-  const hash = window.location.hash;
+  function hashShowerTrailmaker() {
+    const hash = window.location.hash;
 
-  document.getElementById("connect").style.display = "none";
-  document.getElementById("signup").style.display = "none";
+    document.getElementById("family_start").style.display = "none";
+    document.getElementById("family_self-number").style.display = "none";
+    document.getElementById("family_gift-number").style.display = "none";
 
-  switch (hash) {
-    case "#connect":
-      document.getElementById("connect").style.display = "block";
-      break;
-    case "#signup":
-      document.getElementById("signup").style.display = "block";
-      break;
-    default:
-      document.getElementById("connect").style.display = "block";
+    switch (hash) {
+      case "#family_start":
+        document.getElementById("family_start").style.display = "flex";
+        break;
+      case "#family_self-number":
+        document.getElementById("family_self-number").style.display = "flex";
+        break;
+      case "#family_gift-number":
+        document.getElementById("family_gift-number").style.display = "flex";
+        break;
+      default:
+        document.getElementById("family_start").style.display = "flex";
+    }
   }
-}
 
-// Appel initial
-showSectionBasedOnHash();
+  if (document.body.classList.contains("trailmaker")) {
+    hashShowerTrailmaker();
 
-// Mise à jour lors du changement de hash
-window.addEventListener("hashchange", showSectionBasedOnHash);
+    console.log("hashShowerTrailmaker is running");
+
+    window.addEventListener("hashchange", hashShowerTrailmaker);
+  } else {
+    return;
+  }
+});

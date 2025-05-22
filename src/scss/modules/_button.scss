@@ -6,6 +6,7 @@
   transition: all 0.1s ease-in-out;
   color: $white;
   min-width: fit-content;
+  max-width: max-content;
   &.button-black {
     @include transparent-black();
     &:hover {
