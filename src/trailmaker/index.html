@@ -35,6 +35,15 @@
       </div>
     </header>
     <main>
+      <!-- //===// Nomenclature //===// -->
+      <!-- category_[self/gift]_[o/group]-[dates/prefs/address/gift/checkout/thanks] -->
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <====// Form Family package //====> -->
+      <!-- All the next sections are for the family package -->
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Gift or self //=> -->
       <section class="start__form-gift start__family" id="family_start">
         <div class="container">
           <div class="row justify-content-center mb-5">
@@ -73,26 +82,27 @@
           </div>
         </div>
       </section>
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Alone or group, self version //=> -->
       <section class="start__form-number start__family" id="family_self-number">
         <div class="container">
-          <div class="row justify-content-center mb-5">
+          <div class="row justify-content-center align-items-center mb-5">
             <div class="col-8">
-              <h3>
-                Avant de commencer, <br />
-                est-ce pour toi ou pour offrir ?
-              </h3>
+              <h3>Seul·e ou à plusieurs ?</h3>
               <br />
               <p>
-                ExploraBox est cadeau pour soi ou à offrir. Veillez à bien
-                configurer l'escapade si elle n'est pas pour vous.
+                ExploraBox est agréable seul·e comme en groupe ou en famille.
+                Certaines activités sont mêmes débloquées si vous participez à
+                plusieurs.
               </p>
             </div>
           </div>
           <div class="row justify-content-center mb-5">
             <div class="col-3">
-              <div class="row justify-content-end">
-                <a href="#family_self-number" class="button button-white"
-                  >Pour moi</a
+              <div class="row justify-content-end align-items-center">
+                <a href="#family_self_o-dates" class="button button-white"
+                  >Seul·e</a
                 >
               </div>
             </div>
@@ -102,18 +112,140 @@
               </div>
             </div>
             <div class="col-3">
-              <div class="row justify-content-start">
-                <a href="#family_gift-number" class="button button-white"
-                  >Pour offrir</a
-                >
+              <div class="row justify-content-start align-items-center">
+                <a href="#family_self_group-dates" class="button button-white">
+                  Indiquer le nombre
+                  <div class="card__input">
+                    <input
+                      type="text"
+                      name="faq_question"
+                      id=""
+                      placeholder="…"
+                      class="card__input-field"
+                    />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Alone or groupe, gift version//=> -->
       <section class="start__form-number start__family" id="family_gift-number">
-        et nique ta mère
+        <div class="container">
+          <div class="row justify-content-center align-items-center mb-5">
+            <div class="col-8">
+              <h3>Seul·e ou à plusieurs ?</h3>
+              <br />
+              <p>
+                ExploraBox est agréable seul·e comme en groupe ou en famille.
+                Certaines activités sont mêmes débloquées si vous participez à
+                plusieurs.
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-5">
+            <div class="col-3">
+              <div class="row justify-content-end align-items-center">
+                <a href="#family_gift_o-dates" class="button button-white"
+                  >Seul·e</a
+                >
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="centerer">
+                <h6>Ou</h6>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="row justify-content-start align-items-center">
+                <a href="#family_gift_group-dates" class="button button-white">
+                  Indiquer le nombre
+                  <div class="card__input">
+                    <input
+                      type="text"
+                      name="faq_question"
+                      id=""
+                      placeholder="…"
+                      class="card__input-field"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Dates, self version //=> -->
+      <section
+        class="banner__form-date banner__family"
+        id="family_self_o-dates"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-9">
+              <div class="banner-patterned">
+                <div class="banner-patterned__container">
+                  <div class="banner-patterned__text">
+                    <h2>{{banner_title}}</h2>
+                    <h6>{{banner_text}}</h6>
+                  </div>
+                  <a href="#family_self_o-dates" class="button button-black"
+                    >Précédent</a
+                  >
+                  <a href="#family_self_o-prefs" class="button button-black"
+                    >Valider et suivant</a
+                  >
+                </div>
+                <div class="banner-patterned__content"></div>
+                <img
+                  src="../img/pattern_orange-banner.png?as=webp"
+                  alt="pattern"
+                  class="banner-patterned__pattern"
+                />
+              </div>
+            </div>
+            <div class="col-3">Coux</div>
+          </div>
+        </div>
+      </section>
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Dates, gift version //=> -->
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Prefs, self version //=> -->
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Prefs, gift version //=> -->
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Gift prefs, gift only //=> -->
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Dates, gift version //=> -->
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Address, self version //=> -->
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Address, gift version //=> -->
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Checkout, self version //=> -->
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Checkout, gift version //=> -->
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Thank you, self version //=> -->
+      <!-- /=/ -->
+      <!-- /=/ -->
+      <!-- <=// Form Family package | Thank you, gift version //=> -->
     </main>
     <footer class="footer">
       <img src="../img/blur_blue-footer.svg" alt="" class="footer__blur" />

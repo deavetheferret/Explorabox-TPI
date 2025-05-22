@@ -37,6 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("family_start").style.display = "none";
     document.getElementById("family_self-number").style.display = "none";
     document.getElementById("family_gift-number").style.display = "none";
+    document.getElementById("family_self_o-dates").style.display = "none";
+    // document.getElementById("family_gift_o-dates").style.display = "none";
+    // document.getElementById("family_self_group-dates").style.display = "none";
+    // document.getElementById("family_gift_group-dates").style.display = "none";
 
     switch (hash) {
       case "#family_start":
@@ -47,6 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
         break;
       case "#family_gift-number":
         document.getElementById("family_gift-number").style.display = "flex";
+        break;
+      case "#family_self_o-dates":
+        document.getElementById("family_self_o-dates").style.display = "flex";
         break;
       default:
         document.getElementById("family_start").style.display = "flex";

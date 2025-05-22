@@ -20,4 +20,49 @@
       @include transparent-white(0.6);
     }
   }
+
+  .card__input {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    @include transparent-white(0.2);
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    color: $white;
+    transition: all 0.2s ease-in-out;
+    @include font($font-inter, 1rem, 400, normal, 0);
+    &:focus {
+      outline: none;
+      @include transparent-white(0.4);
+    }
+    &:hover {
+      @include transparent-white(0.4);
+    }
+    input[type="text"] {
+      outline: none;
+      border: none;
+      background: transparent;
+      width: 100%;
+      color: inherit;
+      &::placeholder {
+        color: $white;
+        opacity: 0.5;
+      }
+    }
+
+    .card__input-button {
+      padding: 10px 20px;
+      border: none;
+      color: $white;
+      background: transparent;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        scale: 1.05;
+      }
+    }
+  }
 }

@@ -28,4 +28,8 @@ body.trailmaker {
   section.start__urban {
     background-image: url("../img/blur_lavend.svg");
   }
+
+  section[class*="banner__form"] {
+    margin: 200px 0 300px;
+  }
 }
