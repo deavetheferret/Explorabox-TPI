@@ -14,18 +14,105 @@
 
   .banner-patterned__container {
     padding: 45px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     gap: 45px;
+    .banner-patterned__text {
+      z-index: inherit;
+    }
+
+    &.banner-pers {
+      flex-direction: column;
+      align-items: flex-start;
+      .banner-patterned__content {
+        background-color: $white;
+        width: 100%;
+        border-radius: 15px;
+        padding: 20px;
+        z-index: 2;
+
+        .date-info {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 12px;
+          span {
+            @include font($font-inter, 1rem, 400, normal, 0);
+          }
+
+          .sub_cont {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          max-width: 100%;
+          border-radius: 15px;
+        }
+      }
+    }
+
+    &.banner-container__button {
+      padding: 0 45px 45px;
+    }
   }
+
+  .banner-patterned__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      input[type="radio"] {
+        appearance: none;
+        border: 2px solid $black;
+        width: 1rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        &:checked {
+          background-color: $black;
+          border: 2px solid #fefefebf;
+        }
+        &:hover {
+          cursor: pointer;
+          background-color: #2a2a2a88;
+          border: 2px solid #fefefebf;
+        }
+      }
+
+      span.mini-link {
+        @include font($font-inter, 1rem, 400, normal, 0);
+        color: $black;
+        opacity: 0.5;
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
   .banner-patterned__pattern {
     width: 100%;
+    height: 100%;
     transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
     transform: scale(1.03);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
   }
 }
