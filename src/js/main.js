@@ -3,6 +3,7 @@ import favPur from "../img/favicon-pur.png";
 import favAci from "../img/favicon-aci.png";
 import favBlu from "../img/favicon-blu.png";
 import favOra from "../img/favicon-ora.png";
+import { popupData } from "./popupData";
 
 document.addEventListener("DOMContentLoaded", function () {
   const favicon = document.querySelector("link[rel*='icon']");
@@ -38,9 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("family_self-number").style.display = "none";
     document.getElementById("family_gift-number").style.display = "none";
     document.getElementById("family_self_o-dates").style.display = "none";
-    // document.getElementById("family_gift_o-dates").style.display = "none";
-    // document.getElementById("family_self_group-dates").style.display = "none";
-    // document.getElementById("family_gift_group-dates").style.display = "none";
+    document.getElementById("family_gift_o-dates").style.display = "none";
+    document.getElementById("family_self_o-prefs").style.display = "none";
+    document.getElementById("family_self_o-address").style.display = "none";
+    // document.getElementById("family_gift_o-prefs").style.display = "none";
 
     switch (hash) {
       case "#family_start":
@@ -54,6 +56,15 @@ document.addEventListener("DOMContentLoaded", function () {
         break;
       case "#family_self_o-dates":
         document.getElementById("family_self_o-dates").style.display = "flex";
+        break;
+      case "#family_gift_o-dates":
+        document.getElementById("family_gift_o-dates").style.display = "flex";
+        break;
+      case "#family_self_o-prefs":
+        document.getElementById("family_self_o-prefs").style.display = "flex";
+        break;
+      case "#family_self_o-address":
+        document.getElementById("family_self_o-address").style.display = "flex";
         break;
       default:
         document.getElementById("family_start").style.display = "flex";
@@ -69,4 +80,63 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     return;
   }
+
+  const miniLinks = document.querySelectorAll("span.mini-link");
+
+  console.log("hello world");
+
+  miniLinks.forEach((miniLink) => {
+    if (miniLink.textContent === "Info ↗") {
+      const keyword = miniLink.parentElement.textContent
+        .replace("↗", "")
+        .replace(/-/g, "")
+        .replace(/é/g, "e")
+        .replace(/è/g, "e")
+        .replace(/info/gi, "")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, "");
+      const popupDataEntry = popupData[keyword];
+
+      console.log("keyword", keyword);
+
+      if (!popupDataEntry) return;
+
+      miniLink.addEventListener("mouseenter", () => {
+        const popup = document.createElement("div");
+        popup.classList.add("popup");
+
+        if (popupDataEntry.content) {
+          const p = document.createElement("p");
+          p.textContent = popupDataEntry.content;
+          popup.appendChild(p);
+
+          console.log("content data fetched");
+        }
+
+        document.body.appendChild(popup);
+        const rect = miniLink.getBoundingClientRect();
+        popup.style.top = `${window.scrollY + rect.bottom + 5}px`;
+        popup.style.left = `${window.scrollX + rect.left}px`;
+
+        popup.offsetHeight;
+
+        popup.classList.add("show");
+
+        miniLink.classList.add("info-dumper");
+
+        miniLink.addEventListener(
+          "mouseleave",
+          () => {
+            popup.classList.remove("show");
+            miniLink.classList.remove("info-dumper");
+            setTimeout(() => {
+              popup.remove();
+            }, 300);
+          },
+          { once: true }
+        );
+      });
+    }
+  });
 });

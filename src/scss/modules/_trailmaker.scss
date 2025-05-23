@@ -31,24 +31,39 @@ body.trailmaker {
 
   section[class*="banner__form"] {
     margin: 200px 0 300px;
-    .box {
-      span {
+
+    &[class*="_form-address"] {
+      .banner-patterned__pattern {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .banner-patterned__pattern {
+      width: auto;
+      height: 100%;
+    }
+
+    span {
+      @include font($font-inter, 1rem, 400, normal, 0);
+      &.mini-link {
         @include font($font-inter, 1rem, 400, normal, 0);
-        &.mini-link {
-          @include font($font-inter, 1rem, 400, normal, 0);
-          color: $black;
+        color: $black;
+        opacity: 0.5;
+        &.rev {
+          color: $white;
           opacity: 0.5;
-          &.rev {
-            color: $white;
-            opacity: 0.5;
-          }
-          &:hover {
-            cursor: pointer;
-            opacity: 0.8;
-          }
+        }
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
         }
       }
+    }
 
+    .box {
+      position: relative;
+      height: auto;
       .container_col {
         display: flex;
         flex-direction: column;
@@ -59,6 +74,37 @@ body.trailmaker {
         @include transparent-white;
         padding: 10px 5px;
       }
+
+      .resume-card {
+        position: sticky;
+        top: 200px;
+      }
+    }
+
+    .form-address {
+      .card-form {
+        .card__input {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .popup {
+    position: absolute;
+    padding: 10px;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-10px);
+    color: $color-white;
+    max-width: 300px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    &.show {
+      display: block;
+      @include transparent-black;
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }

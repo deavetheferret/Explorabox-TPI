@@ -96,8 +96,7 @@
   }
 
   .banner-patterned__pattern {
-    width: auto;
-    height: 100%;
+    width: 100%;
     transition: transform 0.3s cubic-bezier(0, 0, 0, 1);
     transform: scale(1.03);
     position: absolute;
