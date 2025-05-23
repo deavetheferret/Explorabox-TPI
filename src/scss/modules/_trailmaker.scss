@@ -31,5 +31,34 @@ body.trailmaker {
 
   section[class*="banner__form"] {
     margin: 200px 0 300px;
+    .box {
+      span {
+        @include font($font-inter, 1rem, 400, normal, 0);
+        &.mini-link {
+          @include font($font-inter, 1rem, 400, normal, 0);
+          color: $black;
+          opacity: 0.5;
+          &.rev {
+            color: $white;
+            opacity: 0.5;
+          }
+          &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+          }
+        }
+      }
+
+      .container_col {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .current-row {
+        @include transparent-white;
+        padding: 10px 5px;
+      }
+    }
   }
 }

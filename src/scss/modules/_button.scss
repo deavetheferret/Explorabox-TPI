@@ -19,6 +19,15 @@
     &:hover {
       @include transparent-white(0.6);
     }
+
+    &.card-form {
+      padding: 25px;
+      width: 100%;
+      max-width: 100%;
+      &:hover {
+        @include transparent-white(0.2);
+      }
+    }
   }
 
   .card__input {
