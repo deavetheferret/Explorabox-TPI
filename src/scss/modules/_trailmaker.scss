@@ -78,6 +78,10 @@ body.trailmaker {
       .resume-card {
         position: sticky;
         top: 200px;
+
+        .transhah {
+          opacity: 0.5;
+        }
       }
     }
 
@@ -85,6 +89,12 @@ body.trailmaker {
       .card-form {
         .card__input {
           margin-top: 5px;
+        }
+      }
+      .opa {
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
         }
       }
     }
