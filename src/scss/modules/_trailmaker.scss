@@ -18,6 +18,16 @@ body.trailmaker {
       width: 100%;
       height: 100%;
     }
+    &[class*="_form-thanks"] {
+      height: auto;
+      min-height: 100vh;
+      img {
+        width: 50%;
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+      }
+    }
   }
   section.start__family {
     background-image: url("../img/blur_orange-offer.svg");
@@ -32,11 +42,17 @@ body.trailmaker {
   section[class*="banner__form"] {
     margin: 200px 0 300px;
 
-    &[class*="_form-address"] {
+    &[class*="_form-address"],
+    &[class*="_form-checkout"],
+    &[class*="_form-thanks"] {
       .banner-patterned__pattern {
         width: 100%;
         height: auto;
       }
+    }
+
+    &[class*="_form-thanks"] {
+      margin: 0 !important;
     }
 
     .banner-patterned__pattern {

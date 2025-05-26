@@ -41,9 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("family_self_o-dates").style.display = "none";
     document.getElementById("family_gift_o-dates").style.display = "none";
     document.getElementById("family_self_o-prefs").style.display = "none";
-    // document.getElementById("family_gift_o-prefs").style.display = "none";
+    document.getElementById("family_gift_o-prefs").style.display = "none";
+
     document.getElementById("family_self_o-address").style.display = "none";
     document.getElementById("family_gift_o-address").style.display = "none";
+    document.getElementById("family_self_o-checkout").style.display = "none";
+    document.getElementById("family_gift_o-checkout").style.display = "none";
+    document.getElementById("family_self_o-thanks").style.display = "none";
+    document.getElementById("family_gift_o-thanks").style.display = "none";
 
     switch (hash) {
       case "#family_start":
@@ -64,11 +69,28 @@ document.addEventListener("DOMContentLoaded", function () {
       case "#family_self_o-prefs":
         document.getElementById("family_self_o-prefs").style.display = "flex";
         break;
+      case "#family_gift_o-prefs":
+        document.getElementById("family_gift_o-prefs").style.display = "flex";
+        break;
       case "#family_self_o-address":
         document.getElementById("family_self_o-address").style.display = "flex";
         break;
       case "#family_gift_o-address":
         document.getElementById("family_gift_o-address").style.display = "flex";
+        break;
+      case "#family_self_o-checkout":
+        document.getElementById("family_self_o-checkout").style.display =
+          "flex";
+        break;
+      case "#family_gift_o-checkout":
+        document.getElementById("family_gift_o-checkout").style.display =
+          "flex";
+        break;
+      case "#family_self_o-thanks":
+        document.getElementById("family_self_o-thanks").style.display = "flex";
+        break;
+      case "#family_gift_o-thanks":
+        document.getElementById("family_gift_o-thanks").style.display = "flex";
         break;
       default:
         document.getElementById("family_start").style.display = "flex";
