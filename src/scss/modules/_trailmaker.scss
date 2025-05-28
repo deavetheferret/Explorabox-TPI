@@ -134,3 +134,13 @@ body.trailmaker {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  body.trailmaker {
+    section[class*="start__form"] {
+      height: auto;
+      min-height: 100vh;
+      margin-bottom: 200px;
+    }
+  }
+}

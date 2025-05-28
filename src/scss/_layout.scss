@@ -9,3 +9,57 @@
 //   background-color: rgba(86, 61, 124, 0.15);
 //   border: 1px solid rgba(86, 61, 124, 0.2);
 // }
+
+@media screen and (max-width: 768px) {
+  .dt-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block;
+  }
+  header.header__container {
+    padding: 20px;
+    position: fixed;
+    box-shadow: none;
+    border-radius: 0 0 15px 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  h1 {
+    @include font($font-ease, 3rem, 700, 95%, -0.22438rem);
+  }
+  h2 {
+    @include font($font-ease, 2.5rem, 700, 95%, -0.08419rem);
+  }
+  h3 {
+    @include font($font-inter, 2.2rem, 600, 113%, 0);
+  }
+  h4 {
+    @include font($font-inter, 2.1rem, 600, normal, 0);
+  }
+  h5 {
+    @include font($font-inter, 1.7rem, 600, normal, 0);
+  }
+  h6 {
+    @include font($font-inter, 1.3rem, 600, normal, 0);
+  }
+  p {
+    @include font($font-inter, 1rem, 400, normal, 0);
+  }
+  span {
+    @include font($font-inter, 0.75rem, 400, normal, 0);
+  }
+
+  section {
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
+}

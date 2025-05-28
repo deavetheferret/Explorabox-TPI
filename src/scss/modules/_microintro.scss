@@ -28,3 +28,15 @@
     filter: blur(50px);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .microintro {
+    height: 70vh;
+    img {
+      height: 70vh;
+    }
+    .microintro__text {
+      width: calc(100vw / 12 * 8);
+    }
+  }
+}

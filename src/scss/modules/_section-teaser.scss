@@ -30,3 +30,16 @@ section.teaser {
     z-index: -1;
   }
 }
+
+@media screen and (max-width: 768px) {
+  section.teaser {
+    height: 100vh;
+    padding: 0 0 20px 0;
+    h1 {
+      margin-bottom: 10px;
+    }
+    .button {
+      width: 100% !important;
+    }
+  }
+}

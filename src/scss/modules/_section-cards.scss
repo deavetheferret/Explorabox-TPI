@@ -19,3 +19,15 @@ section.cards {
     object-fit: cover;
   }
 }
+
+@media screen and (max-width: 768px) {
+  section.cards {
+    .cards__background {
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+    }
+    margin-bottom: 200px;
+  }
+}

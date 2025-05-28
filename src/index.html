@@ -14,15 +14,42 @@
     <header class="container header__container">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col col-lg-12">
             <div class="row justify-content-between align-items-center">
-              <div class="col-4">
+              <div class="col-auto col-lg-4">
                 <a href="./" class="header__logo"
-                  >explorabox <img src="./img/rotating-icons.gif" alt=""
+                  >explorabox
+                  <img src="./img/rotating-icons.gif" class="dt-only"
                 /></a>
               </div>
-              <div class="col-5">
-                <nav class="header__nav">
+              <div class="col-2 col-lg-5">
+                <nav class="header__nav dt-only">
+                  <ul>
+                    <li><a href="./">Acceuil</a></li>
+                    <li><a href="#">Activer votre box</a></li>
+                    <li><a href="./about/">À propos</a></li>
+                    <li><a href="./account/#connect">Se connecter</a></li>
+                    <li><a href="#">Fr</a></li>
+                  </ul>
+                </nav>
+                <div class="burger-menu mobile-only">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="26"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#fefefe"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="0" y1="3" x2="47" y2="3"></line>
+                    <line x1="0" y1="12" x2="47" y2="12"></line>
+                    <line x1="0" y1="21" x2="47" y2="21"></line>
+                  </svg>
+                </div>
+                <nav class="header__nav greg">
                   <ul>
                     <li><a href="./">Acceuil</a></li>
                     <li><a href="#">Activer votre box</a></li>
@@ -43,14 +70,14 @@
           <div class="row">
             <div class="col-12">
               <h1>La Suisse comme vous ne l’avez jamais vue</h1>
-              <div class="row align-items-center">
-                <div class="col-9">
+              <div class="row align-items-center gy-3 gy-lg-0">
+                <div class="col-12 col-lg-9">
                   <h5>
                     Découvrez nos box pour vous aventurer à travers la Suisse en
                     groupe ou tout·ex seul·e.
                   </h5>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                   <a href="#offers" class="button button-black"
                     >Découvrir nos offres</a
                   >
@@ -79,7 +106,7 @@
             <div class="col-12">
               <h3>Ton aventure, tes choix</h3>
               <div class="row">
-                <div class="col-7 mb-5">
+                <div class="col-12 col-lg-7 mb-5">
                   <p>
                     Avant de commencer, sélectionnez une thématique. Elle
                     orientra votre escapade vers certains types d’activités, pas
@@ -141,11 +168,11 @@
       </section>
       <section class="cards avis">
         <div class="container">
-          <div class="row">
+          <div class="row gy-4 gy-lg-0">
             <div class="col-12">
               <h3>Ce que disent nos explorateurs</h3>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
               <div class="cards__container">
                 <include src="partials/light-card.html">
                   { "card_title": "“Ça m’a reconnecté à ce que j’aime vraiment :
@@ -178,7 +205,7 @@
                 </include>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
               <div class="cards__container">
                 <include src="partials/light-card.html">
                   { "card_title": "“On a vu nos collègues sous un autre jour –
@@ -216,11 +243,11 @@
       </section>
       <section class="cards faq">
         <div class="container">
-          <div class="row">
+          <div class="row gy-4 gy-lg-0">
             <div class="col-12">
               <h3>Questions fréquentes (FAQ)</h3>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
               <div class="cards__container">
                 <extends
                   src="partials/light-card.html"
@@ -284,7 +311,7 @@
                 </extends>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
               <div class="cards__container">
                 <extends
                   src="partials/light-card.html"
@@ -380,9 +407,9 @@
       <div class="container footer__container">
         <div class="row flex-column gy-4">
           <div class="col-12">
-            <div class="row">
-              <div class="col-1"></div>
-              <div class="col-2">
+            <div class="row gy-5 gy-lg-0">
+              <div class="col-1 dt-only"></div>
+              <div class="col-6 col-lg-2">
                 <a href="/" class="footer__list-title">Acceuil</a>
                 <ul class="footer__list">
                   <li><a href="/#teaser">Notre super offre</a></li>
@@ -390,7 +417,7 @@
                   <li><a href="#">Activer une box</a></li>
                 </ul>
               </div>
-              <div class="col-2">
+              <div class="col-6 col-lg-2">
                 <a href="/about/" class="footer__list-title">À propos</a>
                 <ul class="footer__list">
                   <li><a href="/about/">Qui sommes-nous ?</a></li>
@@ -398,7 +425,7 @@
                   <li><a href="/about/#partenaire">Nos partenaires</a></li>
                 </ul>
               </div>
-              <div class="col-3">
+              <div class="col-6 col-lg-3">
                 <a href="/account/" class="footer__list-title">Compte</a>
                 <ul class="footer__list">
                   <li>
@@ -410,8 +437,8 @@
                   <li><a href="/account/cleric-d/#settings">Paramètres</a></li>
                 </ul>
               </div>
-              <div class="col-1"></div>
-              <div class="col-3">
+              <div class="col-1 dt-only"></div>
+              <div class="col-6 col-lg-3">
                 <a href="/account/" class="footer__list-title">Services</a>
                 <ul class="footer__list">
                   <li>
@@ -425,8 +452,8 @@
           </div>
           <div class="col-12">
             <div class="row">
-              <div class="col-1"></div>
-              <div class="col-4">
+              <div class="col-1 dt-only"></div>
+              <div class="col-6 col-lg-4">
                 <span>
                   ExploraBox <br />
                   site de blueFACTORY Fribourg <br />
@@ -436,7 +463,7 @@
                   +41 (0)26 500 00 00
                 </span>
               </div>
-              <div class="col-4">
+              <div class="col-6 col-lg-4">
                 <ul class="footer__list">
                   <li>
                     Sur instagram
@@ -465,15 +492,15 @@
 
           <div class="col-12">
             <div class="row">
-              <div class="col-1"></div>
-              <div class="col-4">
+              <div class="col-1 dt-only"></div>
+              <div class="col-6 col-lg-4">
                 <span>© 2025 ExploraBox SA — CH 1532 Tout droits réservés</span>
               </div>
-              <div class="col-2"></div>
-              <div class="col-4 align-self-end">
+              <div class="col-2 dt-only"></div>
+              <div class="col-6 col-lg-4 align-self-end">
                 <span>made by a-frank.dev</span>
               </div>
-              <div class="col-1"></div>
+              <div class="col-1 dt-only"></div>
             </div>
           </div>
         </div>

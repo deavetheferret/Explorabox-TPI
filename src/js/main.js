@@ -16,6 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
     favicon.href = favicons[currentFavicon];
   });
 
+  let burgerMenu = document.querySelector(".burger-menu");
+  let navMenu = document.querySelector(".greg");
+
+  burgerMenu.addEventListener("click", () => {
+    burgerMenu.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    document.body.classList.toggle("nav-open");
+  });
+
   let cards = document.querySelectorAll(".card");
   cards.forEach((card) => {
     const cardText = card.querySelector(".card__text");

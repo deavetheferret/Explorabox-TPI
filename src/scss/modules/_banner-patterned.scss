@@ -105,3 +105,24 @@
     z-index: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .banner-patterned {
+    .banner-patterned__container {
+      padding: 20px;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 20px;
+    }
+    .banner-patterned__pattern {
+      height: 100%;
+      width: auto;
+      transform: rotate(180deg) scale(1.05);
+    }
+    &:hover {
+      .banner-patterned__pattern {
+        transform: scale(1) rotate(180deg);
+      }
+    }
+  }
+}

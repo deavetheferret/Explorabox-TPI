@@ -52,3 +52,21 @@
     z-index: -1;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    .footer__container {
+      margin-bottom: 0;
+      padding: 40px;
+      box-shadow: none;
+      border-radius: 15px 15px 0 0;
+    }
+    .footer__blur {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      height: auto;
+    }
+  }
+}
