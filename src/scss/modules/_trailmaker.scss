@@ -141,6 +141,17 @@ body.trailmaker {
       height: auto;
       min-height: 100vh;
       margin-bottom: 200px;
+      &[class*="_form-thanks"] {
+        img {
+          width: 80%;
+          max-width: 100%;
+          height: auto;
+          cursor: pointer;
+        }
+      }
+    }
+    section[class*="banner__form"] {
+      margin: 100px 0 200px;
     }
   }
 }
