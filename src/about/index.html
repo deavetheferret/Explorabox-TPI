@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>ExploraBox — Acceuil</title>
+    <title>ExploraBox — A propos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../scss/main.scss" />
     <link rel="icon" href="../img/favicon-aci.png" />
@@ -13,15 +13,42 @@
     <header class="container header__container">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col col-lg-12">
             <div class="row justify-content-between align-items-center">
-              <div class="col-4">
+              <div class="col-auto col-lg-4">
                 <a href="/" class="header__logo"
-                  >explorabox <img src="../img/rotating-icons.gif" alt=""
+                  >explorabox
+                  <img src="../img/rotating-icons.gif" class="dt-only"
                 /></a>
               </div>
-              <div class="col-5">
-                <nav class="header__nav">
+              <div class="col-2 col-lg-5">
+                <nav class="header__nav dt-only">
+                  <ul>
+                    <li><a href="/">Acceuil</a></li>
+                    <li><a href="#">Activer votre box</a></li>
+                    <li><a href="/about/">À propos</a></li>
+                    <li><a href="/account/#connect">Se connecter</a></li>
+                    <li><a href="#">Fr</a></li>
+                  </ul>
+                </nav>
+                <div class="burger-menu mobile-only">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="26"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#fefefe"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="0" y1="3" x2="47" y2="3"></line>
+                    <line x1="0" y1="12" x2="47" y2="12"></line>
+                    <line x1="0" y1="21" x2="47" y2="21"></line>
+                  </svg>
+                </div>
+                <nav class="header__nav mobile-only greg">
                   <ul>
                     <li><a href="/">Acceuil</a></li>
                     <li><a href="#">Activer votre box</a></li>
@@ -36,7 +63,400 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="microintro">
+        <div class="microintro__text">
+          <h3>Une idée simple, une expérience inoubliable</h3>
+          <p>
+            Finis les week-ends barbants et la routine ! Une plateforme
+            touristique propose des activités surprises dont les détails sont
+            dévoilés progressivement. Les personnes qui y souscrivent
+            choisissent une thématique et réservent 10 jours sur l’année. Chaque
+            escapade les conduit vers une destination “mystère” en Suisse afin
+            de pratiquer une activité inédite. Une application interactive les
+            accompagne dans chaque étape de leur périple – qui est aussi une
+            occasion de découvrir des lieux, de faire des rencontres uniques, et
+            de déguster des spécialités locales.
+          </p>
+        </div>
+        <img src="../img/blur_lavend.svg" alt="" />
+      </div>
+      <section class="cards avis">
+        <div class="container">
+          <div class="row gy-4 gy-lg-0">
+            <div class="col-12">
+              <h3>L'équipe derrière ExploraBox</h3>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="cards__container">
+                <include src="partials/light-card.html">
+                  { "card_title": "Trois esprits, une même envie", "card_text":
+                  "À l’origine d’ExploraBox, il y a Camille Morel, Jérôme Sutter
+                  et Lina Alvarez — trois ami·e·s passionné·e·s par l’aventure,
+                  les détours imprévus et l’art de s’émerveiller près de chez
+                  soi. Issu·e·s respectivement du design, du tourisme et de la
+                  communication, ils·elles ont réuni leurs expertises autour
+                  d’une même conviction : il n’est pas nécessaire de traverser
+                  le monde pour vivre des moments forts.", "card_subtext": "" }
+                </include>
+                <include src="partials/light-card.html">
+                  { "card_title": "La simplicité pensée avec soin", "card_text":
+                  "Ils·elles croient aux idées simples mais bien exécutées.
+                  Celles qui laissent de la place à l’inattendu, sans jamais
+                  négliger la qualité ni l’intention. C’est avec cet état
+                  d’esprit que chaque projet est conçu, en privilégiant le lien
+                  direct avec les partenaires et les artisans qui partagent
+                  leurs valeurs.", "card_subtext": "" }
+                </include>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="cards__container">
+                <include src="partials/light-card.html">
+                  { "card_title": "Une réponse à leur propre besoin",
+                  "card_text": "Tous trois ont connu ce besoin de déconnecter,
+                  cette envie de faire quelque chose de nouveau sans passer des
+                  heures à tout organiser. Alors ils·elles ont créé ce
+                  qu’ils·elles cherchaient : une plateforme qui surprend, qui
+                  fait vibrer, et qui remet la curiosité au cœur de
+                  l’expérience.", "card_subtext": "" }
+                </include>
+                <include src="partials/light-card.html">
+                  { "card_title": "L’âme d’explorateur·rice", "card_text": "On
+                  leur dit souvent qu’iels ont gardé leur âme d’explorateur.
+                  C’est vrai. ils·elles aiment prendre des chemins de traverse,
+                  poser des questions, apprendre ce qu’il y a derrière une porte
+                  fermée ou une colline qu’ils ne connaissent pas. ExploraBox,
+                  c’est un peu de cette curiosité-là, mise en boîte pour la
+                  partager.", "card_subtext": "" }
+                </include>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="../img/blur_orange.svg" class="cards__background" />
+      </section>
+
+      <div class="microintro">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <video
+                src="../img/teaser_preview.webm"
+                autoplay
+                muted
+                loop
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="cards partenaire">
+        <div class="container">
+          <div class="row gy-4 gy-lg-0">
+            <div class="col-12">
+              <h3>Nos partenaires, notre qualité</h3>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="cards__container">
+                <div class="card">
+                  <img src="../img/logo-FSL-SVF.svg" alt="" />
+                  <a href="https://www.suisseloisirs.org/" target="_blank"
+                    >Vers leur site internet ↗</a
+                  >
+                </div>
+                <div class="card">
+                  <img src="../img/logo-sgv-usam.svg" alt="" />
+                  <a href="https://www.sgv-usam.ch/" target="_blank"
+                    >Vers leur site internet ↗</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="cards__container">
+                <div class="card">
+                  <img src="../img/logo-switzerland.svg" alt="" />
+                  <a href="https://www.myswitzerland.com/" target="_blank"
+                    >Vers leur site internet ↗</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="../img/blur_grey.svg" class="cards__background" />
+      </section>
+      <section class="cards faq">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-12">
+              <h3>Questions fréquentes (FAQ)</h3>
+            </div>
+            <div class="col-12">
+              <div class="cards__container">
+                <extends
+                  src="partials/light-card.html"
+                  locals='{ "card_title": "Concept & fonctionnement", "card_text": "",
+                  "card_subtext": "" }'
+                >
+                  <block name="card_content">
+                    <ul class="card__list answers">
+                      <li class="card__list-item">
+                        <h6 id="faq-1a">Comment fonctionne ExploraBox ?</h6>
+                        <p>
+                          Laboris laborum exercitation ut cupidatat cupidatat
+                          irure anim anim sit exercitation sint veniam
+                          reprehenderit. Exercitation occaecat elit exercitation
+                          ullamco. Aliqua laborum commodo exercitation do
+                          consequat ipsum labore cupidatat. Nulla dolore
+                          exercitation tempor consequat cillum sunt labore.
+                        </p>
+                      </li>
+                      <li class="card__list-item">
+                        <h6 id="faq-1b">
+                          Quelles sont les étapes entre la réservation et le
+                          jour de l’activité ?
+                        </h6>
+                        <p>
+                          Laboris laborum exercitation ut cupidatat cupidatat
+                          irure anim anim sit exercitation sint veniam
+                          reprehenderit. Exercitation occaecat elit exercitation
+                          ullamco. Aliqua laborum commodo exercitation do
+                          consequat ipsum labore cupidatat. Nulla dolore
+                          exercitation tempor consequat cillum sunt labore.
+                        </p>
+                      </li>
+                      <li class="card__list-item">
+                        <h6 id="faq-1c">
+                          Puis-je choisir ou exclure certaines activités ?
+                        </h6>
+                        <p>
+                          Laboris laborum exercitation ut cupidatat cupidatat
+                          irure anim anim sit exercitation sint veniam
+                          reprehenderit. Exercitation occaecat elit exercitation
+                          ullamco. Aliqua laborum commodo exercitation do
+                          consequat ipsum labore cupidatat. Nulla dolore
+                          exercitation tempor consequat cillum sunt labore.
+                        </p>
+                      </li>
+                      <li class="card__list-item">
+                        <h6 id="faq-1d">
+                          Comment l’application m’accompagne-t-elle avant et
+                          pendant l’expérience ?
+                        </h6>
+                        <p>
+                          Laboris laborum exercitation ut cupidatat cupidatat
+                          irure anim anim sit exercitation sint veniam
+                          reprehenderit. Exercitation occaecat elit exercitation
+                          ullamco. Aliqua laborum commodo exercitation do
+                          consequat ipsum labore cupidatat. Nulla dolore
+                          exercitation tempor consequat cillum sunt labore.
+                        </p>
+                      </li>
+                    </ul></block
+                  >
+                </extends>
+                <extends
+                  src="partials/light-card.html"
+                  locals='{ "card_title": "Logistique & transport", "card_text": "",
+                  "card_subtext": "" }'
+                >
+                  <block name="card_content"
+                    ><ul class="card__list answers">
+                      <li class="card__list-item">
+                        <h6 id="faq-3a">
+                          Dois-je utiliser ma voiture ou les transports publics
+                          ?
+                        </h6>
+                        <p>
+                          Laboris laborum exercitation ut cupidatat cupidatat
+                          irure anim anim sit exercitation sint veniam
+                          reprehenderit. Exercitation occaecat elit exercitation
+                          ullamco. Aliqua laborum commodo exercitation do
+                          consequat ipsum labore cupidatat. Nulla dolore
+                          exercitation tempor consequat cillum sunt labore.
+                        </p>
+                      </li>
+                      <li class="card__list-item">
+                        <h6 id="faq-3b">
+                          Les activités sont-elles accessibles en transports en
+                          commun ?
+                        </h6>
+                        <p>
+                          Laboris laborum exercitation ut cupidatat cupidatat
+                          irure anim anim sit exercitation sint veniam
+                          reprehenderit. Exercitation occaecat elit exercitation
+                          ullamco. Aliqua laborum commodo exercitation do
+                          consequat ipsum labore cupidatat. Nulla dolore
+                          exercitation tempor consequat cillum sunt labore.
+                        </p>
+                      </li>
+                      <li class="card__list-item">
+                        <h6 id="faq-3c">
+                          Quels sont les horaires typiques d’une journée
+                          ExploraBox ?
+                        </h6>
+                        <p>
+                          Laboris laborum exercitation ut cupidatat cupidatat
+                          irure anim anim sit exercitation sint veniam
+                          reprehenderit. Exercitation occaecat elit exercitation
+                          ullamco. Aliqua laborum commodo exercitation do
+                          consequat ipsum labore cupidatat. Nulla dolore
+                          exercitation tempor consequat cillum sunt labore.
+                        </p>
+                      </li>
+                    </ul></block
+                  >
+                </extends>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="cards__container">
+                <extends
+                  src="partials/light-card.html"
+                  locals='{ "card_title": "Réservation & personnalisation", "card_text": "",
+                  "card_subtext": "Plus dans ce genre ↗" }'
+                >
+                  <block name="card_content"
+                    ><ul class="card__list answers">
+                      <li class="card__list-item">
+                        <h6 id="faq-2a">
+                          Puis-je réserver pour une seule personne ?
+                        </h6>
+                        <p>
+                          Laboris laborum exercitation ut cupidatat cupidatat
+                          irure anim anim sit exercitation sint veniam
+                          reprehenderit. Exercitation occaecat elit exercitation
+                          ullamco. Aliqua laborum commodo exercitation do
+                          consequat ipsum labore cupidatat. Nulla dolore
+                          exercitation tempor consequat cillum sunt labore.
+                        </p>
+                      </li>
+                      <li class="card__list-item">
+                        <h6 id="faq-2b">
+                          Est-il possible d'offrir une ExploraBox en cadeau ?
+                        </h6>
+                        <p>
+                          Laboris laborum exercitation ut cupidatat cupidatat
+                          irure anim anim sit exercitation sint veniam
+                          reprehenderit. Exercitation occaecat elit exercitation
+                          ullamco. Aliqua laborum commodo exercitation do
+                          consequat ipsum labore cupidatat. Nulla dolore
+                          exercitation tempor consequat cillum sunt labore.
+                        </p>
+                      </li>
+                      <li class="card__list-item">
+                        <h6 id="faq-2c">
+                          Peut-on réserver pour un groupe ou une famille ?
+                        </h6>
+                        <p>
+                          Laboris laborum exercitation ut cupidatat cupidatat
+                          irure anim anim sit exercitation sint veniam
+                          reprehenderit. Exercitation occaecat elit exercitation
+                          ullamco. Aliqua laborum commodo exercitation do
+                          consequat ipsum labore cupidatat. Nulla dolore
+                          exercitation tempor consequat cillum sunt labore.
+                        </p>
+                      </li>
+                      <li class="card__list-item">
+                        <h6 id="faq-2d">
+                          Comment sont prise en compte mes préférences ou
+                          restrictions (allergies, mobilité, etc.) ?
+                        </h6>
+                        <p>
+                          Laboris laborum exercitation ut cupidatat cupidatat
+                          irure anim anim sit exercitation sint veniam
+                          reprehenderit. Exercitation occaecat elit exercitation
+                          ullamco. Aliqua laborum commodo exercitation do
+                          consequat ipsum labore cupidatat. Nulla dolore
+                          exercitation tempor consequat cillum sunt labore.
+                        </p>
+                      </li>
+                      <li class="card__list-item">
+                        <h6 id="faq-2e">
+                          Puis-je modifier ou annuler une date réservée ?
+                        </h6>
+                        <p>
+                          Laboris laborum exercitation ut cupidatat cupidatat
+                          irure anim anim sit exercitation sint veniam
+                          reprehenderit. Exercitation occaecat elit exercitation
+                          ullamco. Aliqua laborum commodo exercitation do
+                          consequat ipsum labore cupidatat. Nulla dolore
+                          exercitation tempor consequat cillum sunt labore.
+                        </p>
+                      </li>
+                    </ul></block
+                  >
+                </extends>
+                <extends
+                  src="partials/light-card.html"
+                  locals='{ "card_title": "Expérience & contenu", "card_text": "",
+                  "card_subtext": "Plus dans ce genre ↗" }'
+                >
+                  <block name="card_content"
+                    ><ul class="card__list answers">
+                      <li class="card__list-item">
+                        <h6 id="faq-4a">
+                          Les activités sont-elles adaptées aux enfants ?
+                        </h6>
+                        <p>
+                          Laboris laborum exercitation ut cupidatat cupidatat
+                          irure anim anim sit exercitation sint veniam
+                          reprehenderit. Exercitation occaecat elit exercitation
+                          ullamco. Aliqua laborum commodo exercitation do
+                          consequat ipsum labore cupidatat. Nulla dolore
+                          exercitation tempor consequat cillum sunt labore.
+                        </p>
+                      </li>
+                      <li class="card__list-item">
+                        <h6 id="faq-4b">
+                          Vais-je refaire la même activité si je reserve
+                          plusieurs dates ?
+                        </h6>
+                        <p>
+                          Laboris laborum exercitation ut cupidatat cupidatat
+                          irure anim anim sit exercitation sint veniam
+                          reprehenderit. Exercitation occaecat elit exercitation
+                          ullamco. Aliqua laborum commodo exercitation do
+                          consequat ipsum labore cupidatat. Nulla dolore
+                          exercitation tempor consequat cillum sunt labore.
+                        </p>
+                      </li>
+                    </ul></block
+                  >
+                </extends>
+              </div>
+            </div>
+            <div class="col-12 mt-5">
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                  <extends
+                    src="partials/light-card.html"
+                    locals='{ "card_title": "Une question en particulier ?", "card_text": "",
+                    "card_subtext": "" }'
+                  >
+                    <block name="card_content">
+                      <div class="card__input">
+                        <input
+                          type="text"
+                          name="faq_question"
+                          id=""
+                          placeholder="Est-ce que..."
+                          class="card__input-field"
+                        />
+                        <button class="card__input-button">Envoyer</button>
+                      </div>
+                    </block>
+                  </extends>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="../img/blur_blue.svg" class="cards__background" />
+      </section>
+    </main>
     <footer class="footer">
       <img src="../img/blur_blue-footer.svg" alt="" class="footer__blur" />
       <div class="container footer__container">
